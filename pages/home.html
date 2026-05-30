@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello World</title>
+	<script src="/assets/scripts/home.js"></script>
+</head>
+<body>
+	<h1>Hello World</h1>
+	<div id="nologgedin" hidden>
+		<a href="/login"><button>Log in</button></a>
+		<a href="/signin"><button>Sign in</button></a>
+	</div>
+	<div id="loggedin" hidden>
+		Logged in as: <span id="username"></span>
+		<a href="/api/user/logout"><button>Log out</button></a>
+		<button id="delete">Delete account</button>
+	</div>
+	<noscript>
+		<p>Enable Javascript</p>
+	</noscript>
+	<hr/>
+	<p>{}</p>
+</body>
+</html>
